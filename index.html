@@ -1,1 +1,27 @@
-Hello World
+Installing terraform on Centos 7
+
+1. Open a terminal on your CentOS 7 machine.
+
+2. Update your system's package manager by running the following command:
+sudo yum update
+
+3. Install the necessary packages required for Terraform by running the following command:
+sudo yum install -y unzip wget
+
+4. Download the latest version of Terraform for Linux 64-bit from the official website by running the following command:
+wget https://releases.hashicorp.com/terraform/1.0.11/terraform_1.0.11_linux_amd64.zip
+
+Note: Please ensure that you have the latest version of Terraform by checking the official website.
+
+5. Unzip the downloaded Terraform package by running the following command:
+unzip terraform_1.0.11_linux_amd64.zip
+
+6. Move the Terraform binary to a directory in your system's PATH variable so that it can be executed from any directory. For example, you can move it to the /usr/local/bin directory by running the following command:
+sudo mv terraform /usr/local/bin/
+
+7. Verify that Terraform has been installed correctly by running the following command:
+/usr/local/bin/terraform --version
+
+8. This should display the version number of Terraform that you just installed.
+
+That's it! You have successfully installed Terraform on CentOS 7.
